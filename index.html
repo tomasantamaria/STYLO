@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STYLO | Using AI to Style</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
     <style>
         /* ---------- RESET & VARIABLES ---------- */
         *{box-sizing:border-box;margin:0;padding:0}
@@ -73,6 +73,11 @@
         .case-card{background:var(--white);padding:2rem;border-radius:var(--rad);box-shadow:0 8px 25px rgba(0,0,0,.05)}
         .case-metric{font-size:2.5rem;font-weight:700;color:var(--primary);margin-block:1rem}
 
+        /* ---------- PRICING ---------- */
+        .pricing{padding:clamp(4rem,10vh,6rem) 0;background:var(--white)}
+        .pricing-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:3rem}
+        @media (min-width:768px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+
         /* ---------- CONTACT ---------- */
         .contact{padding:clamp(4rem,10vh,6rem) 0}
         .contact-form{max-width:600px;margin-inline:auto}
@@ -91,11 +96,11 @@
         /* ---------- RESPONSIVE ---------- */
         @media (min-width:768px){
             .hero-content{grid-template-columns:1fr 1fr}
-            .services-grid,.cases-grid{grid-template-columns:repeat(2,1fr)}
+            .services-grid,.cases-grid,.pricing-grid{grid-template-columns:repeat(2,1fr)}
         }
         @media (min-width:1024px){
             .services-grid{grid-template-columns:repeat(4,1fr)}
-            .cases-grid{grid-template-columns:repeat(3,1fr)}
+            .cases-grid,.pricing-grid{grid-template-columns:repeat(3,1fr)}
         }
     </style>
 </head>
@@ -107,6 +112,7 @@
             <div>
                 <a href="#services">Services</a>
                 <a href="#cases" style="margin-left:1rem">Cases</a>
+                <a href="#pricing" style="margin-left:1rem">Pricing</a>
                 <a href="#contact" style="margin-left:1rem">Contact</a>
             </div>
         </nav>
@@ -125,7 +131,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="https://placehold.co/600x400/c60013/ffffff?text=Fashionable+Solutions" alt="Fashionable Solutions" class="hero-image">
+                    <img src="https://placehold.co/600x400/c60013/ffffff?text=Fashionable+Solutions " alt="Fashionable Solutions" class="hero-image">
                 </div>
             </div>
         </div>
@@ -189,12 +195,34 @@
         </div>
     </section>
 
+    <!-- PRICING (NEW SECTION) -->
+    <section id="pricing" class="pricing">
+        <div class="container text-center">
+            <h2>Simple Pricing</h2>
+            <p>Choose the plan that fits your needs</p>
+            <div class="pricing-grid">
+                <div class="service-card"><!-- re-use existing card style -->
+                    <h3>Starter</h3>
+                    <p>Perfect for small teams getting started with AI styling.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Professional</h3>
+                    <p>Full feature set for growing brands and retailers.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Enterprise</h3>
+                    <p>Custom solutions & dedicated support for large organisations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container text-center">
             <h2>Get in Touch</h2>
             <p>Ready to Style? Let's talk.</p>
-            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/mdkwzadd" method="POST">
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -219,7 +247,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 stylo. All rights reserved.</p>
+            <p>&copy; 2025 STYLO. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
