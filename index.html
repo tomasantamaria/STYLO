@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STYLO | Using AI to Style</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ---------- RESET & VARIABLES ---------- */
         *{box-sizing:border-box;margin:0;padding:0}
@@ -78,6 +78,12 @@
         .pricing-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:3rem}
         @media (min-width:768px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
 
+        /* ======  COLOUR HELPERS  ====== */
+        .bg-primary{background:#fee !important;border-color:#fcc !important}
+        .bg-primary{background:#efe !important;border-color:#cfc !important}
+        .bg-primary{background:#eef !important;border-color:#ccf !important}
+        .bg-primary{background:#fff9e6 !important;border-color:#ffe58f !important}
+
         /* ---------- CONTACT ---------- */
         .contact{padding:clamp(4rem,10vh,6rem) 0}
         .contact-form{max-width:600px;margin-inline:auto}
@@ -131,7 +137,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="https://placehold.co/600x400/A91313/ffffff?text=Fashionable+Solutions " alt="Fashionable Solutions" class="hero-image">
+                    <img src="https://placehold.co/600x400/A91313/ffffff?text=Fashionable+Solutions" alt="Fashionable Solutions" class="hero-image">
                 </div>
             </div>
         </div>
@@ -195,23 +201,24 @@
         </div>
     </section>
 
-    <!-- PRICING (NEW SECTION) -->
+    <!-- PRICING -->
     <section id="pricing" class="pricing">
         <div class="container text-center">
-            <h2>Pricing Tiers</h2>
+            <h2>Simple Pricing</h2>
             <p>Choose the plan that fits your needs</p>
             <div class="pricing-grid">
-                <div class="service-card"><!-- re-use existing card style -->
-                    <h3>Plan Lite</h3>
-                    <p>Micro and small brands that are just starting to sell online (USD $99-149/month).</p>
+                <!-- add / swap bg-red, bg-green, bg-blue, bg-gold on any card -->
+                <div class="service-card bg-red">
+                    <h3>Starter</h3>
+                    <p>Perfect for small teams getting started with AI styling.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Starter Plan</h3>
-                    <p>Medium-sized businesses with larger catalogs and regional operations (USD $299/month).</p>
+                <div class="service-card bg-green">
+                    <h3>Professional</h3>
+                    <p>Full feature set for growing brands and retailers.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Plan Growth</h3>
-                    <p>Large retailers seeking regional scalability and actionble insights (USD $799/month).</p>
+                <div class="service-card bg-gold">
+                    <h3>Enterprise</h3>
+                    <p>Custom solutions & dedicated support for large organisations.</p>
                 </div>
             </div>
         </div>
@@ -247,7 +254,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 STYLO. All rights reserved.</p>
+            <p>&copy; 2024 stylo. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
