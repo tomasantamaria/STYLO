@@ -78,11 +78,15 @@
         .pricing-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:3rem}
         @media (min-width:768px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
 
-        /* ======  COLOUR HELPERS  ====== */
-        .bg-primary{background:#fee !important;border-color:#fcc !important}
-        .bg-primary{background:#efe !important;border-color:#cfc !important}
-        .bg-primary{background:#eef !important;border-color:#ccf !important}
-        .bg-primary{background:#fff9e6 !important;border-color:#ffe58f !important}
+        /* ======  HEX-COLOR HELPER  ====== */
+        /* usage: <div class="service-card" data-color="#A91313"> … </div> */
+        .service-card[data-color]{
+          background:attr(data-color) !important;
+          color:#fff;                     /* default white text on coloured bg */
+          border:1px solid attr(data-color);
+        }
+        /* auto-contrast text if you want it darker on light backgrounds */
+        .service-card[data-color][data-contrast="dark"]{color:var(--dark)}
 
         /* ---------- CONTACT ---------- */
         .contact{padding:clamp(4rem,10vh,6rem) 0}
@@ -207,16 +211,16 @@
             <h2>Simple Pricing</h2>
             <p>Choose the plan that fits your needs</p>
             <div class="pricing-grid">
-                <!-- add / swap bg-red, bg-green, bg-blue, bg-gold on any card -->
-                <div class="service-card bg-red">
+                <!-- example: data-color="#A91313"  |  use any hex you like -->
+                <div class="service-card" data-color="#A91313">
                     <h3>Starter</h3>
                     <p>Perfect for small teams getting started with AI styling.</p>
                 </div>
-                <div class="service-card bg-green">
+                <div class="service-card" data-color="#28a745">
                     <h3>Professional</h3>
                     <p>Full feature set for growing brands and retailers.</p>
                 </div>
-                <div class="service-card bg-gold">
+                <div class="service-card" data-color="#ffc107" data-contrast="dark">
                     <h3>Enterprise</h3>
                     <p>Custom solutions & dedicated support for large organisations.</p>
                 </div>
