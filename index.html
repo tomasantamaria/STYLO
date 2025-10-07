@@ -79,6 +79,7 @@
         @media (min-width:768px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
 
         /* ======  COLOUR HELPERS  ====== */
+        .bg-primary{background:var(--primary) !important;color:var(--white) !important;border-color:var(--primary) !important}
         .bg-red{background:#fee !important;border-color:#fcc !important}
         .bg-green{background:#efe !important;border-color:#cfc !important}
         .bg-blue{background:#eef !important;border-color:#ccf !important}
@@ -207,16 +208,16 @@
             <h2>Simple Pricing</h2>
             <p>Choose the plan that fits your needs</p>
             <div class="pricing-grid">
-                <!-- add / swap bg-red, bg-green, bg-blue, bg-gold on any card -->
-                <div class="service-card bg-red">
+                <!-- use class="bg-primary" for primary colour -->
+                <div class="service-card bg-primary">
                     <h3>Starter</h3>
                     <p>Perfect for small teams getting started with AI styling.</p>
                 </div>
-                <div class="service-card bg-green">
+                <div class="service-card bg-primary">
                     <h3>Professional</h3>
                     <p>Full feature set for growing brands and retailers.</p>
                 </div>
-                <div class="service-card bg-gold">
+                <div class="service-card bg-primary">
                     <h3>Enterprise</h3>
                     <p>Custom solutions & dedicated support for large organisations.</p>
                 </div>
