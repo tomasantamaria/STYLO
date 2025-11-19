@@ -110,6 +110,16 @@
             .services-grid{grid-template-columns:repeat(4,1fr)}
             .cases-grid,.pricing-grid{grid-template-columns:repeat(3,1fr)}
         }
+        /* ---------- tarjetas más largas ---------- */
+.pricing .service-card{
+  padding: 2.5rem 2rem 3rem;   /* más espacio interno abajo */
+  min-height: 480px;           /* altura mínima común */
+  display: flex;
+  flex-direction: column;
+}
+.pricing .service-card ul{
+  margin-top: auto;            /* empuja la lista hacia el final */
+}
     </style>
 </head>
 <body>
@@ -200,27 +210,57 @@
     </section>
 
     <!-- PRICING -->
-    <section id="pricing" class="pricing">
-        <div class="container text-center">
-            <h2>Simple Pricing</h2>
-            <p>Choose the plan that fits your needs</p>
-            <div class="pricing-grid">
-                <!-- use class="bg-primary" for primary colour -->
-                <div class="service-card bg-primary">
-                    <h3>Plan Lite</h3>
-                    <p>Micro and small brands that are just starting to sell online (USD $50/month).</p>
-                </div>
-                <div class="service-card bg-primary">
-                    <h3>Starter Plan</h3>
-                    <p>Medium-sized businesses with larger catalogs and regional operations (USD $100/month).</p>
-                </div>
-                <div class="service-card bg-primary">
-                    <h3>Plan Growth</h3>
-                    <p>Tailored for large retailers seeking regional scalability and actionable insights (USD $140/month).</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="pricing" class="pricing">
+  <div class="container text-center">
+    <h2>Simple Pricing</h2>
+    <p>Choose the plan that fits your needs</p>
+
+    <div class="pricing-grid">
+      <!-- 1. Lite -->
+      <div class="service-card bg-primary">
+        <h3>Lite Plan</h3>
+        <p><strong>USD 50 / month</strong></p>
+        <p>For Small Fashion Brands</p>
+        <ul style="margin:1rem 0;list-style:none;padding:0">
+          <li>✔ Up to 200 SKUs</li>
+          <li>✔ CSV or manual catalog upload</li>
+          <li>✔ Basic click & redirect analytics</li>
+          <li>✔ Standard visibility in search results</li>
+          <li>✔ Email support</li>
+        </ul>
+      </div>
+
+      <!-- 2. Starter -->
+      <div class="service-card bg-primary">
+        <h3>Starter Plan</h3>
+        <p><strong>USD 100 / month</strong></p>
+        <p>For Growing E-Commerce Teams</p>
+        <ul style="margin:1rem 0;list-style:none;padding:0">
+          <li>✔ Up to 1,000 SKUs</li>
+          <li>✔ API integration or scheduled feeds</li>
+          <li>✔ Dashboard with traffic, clicks & estimated conversions</li>
+          <li>✔ Advanced filters (collections, sustainability, regions)</li>
+          <li>✔ Standard support (48–72 hours)</li>
+        </ul>
+      </div>
+
+      <!-- 3. Growth -->
+      <div class="service-card bg-primary">
+        <h3>Growth Plan</h3>
+        <p><strong>USD 140 / month</strong></p>
+        <p>For Large Retailers & Marketplaces</p>
+        <ul style="margin:1rem 0;list-style:none;padding:0">
+          <li>✔ Unlimited SKUs</li>
+          <li>✔ Sponsored placements (featured products)</li>
+          <li>✔ Advanced analytics with viral trend tracking</li>
+          <li>✔ Regional segmentation & monthly reports</li>
+          <li>✔ Dedicated Customer Success Manager</li>
+          <li>✔ Priority support (within 24 hours)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
