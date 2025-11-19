@@ -120,6 +120,12 @@
 .pricing .service-card ul{
   margin-top: auto;            /* empuja la lista hacia el final */
 }
+        /* ---------- títulos de planes más grandes ---------- */
+.plan-title{
+  font-size: 1.75rem;        /* agrandamos */
+  line-height: 1.4;          /* más interlineado */
+  margin-bottom: .5rem;
+}
     </style>
 </head>
 <body>
@@ -218,50 +224,53 @@
     <div class="pricing-grid">
       <!-- 1. Lite -->
       <div class="service-card bg-primary">
-        <h3>Lite Plan</h3>
+        <h3 class="plan-title">Lite Plan</h3>
         <p><strong>USD 50 / month</strong></p>
         <p>For Small Fashion Brands</p>
-        <ul style="margin:1rem 0;list-style:none;padding:0">
+        <ul>
           <li>✔ Up to 200 SKUs</li>
           <li>✔ CSV or manual catalog upload</li>
           <li>✔ Basic click & redirect analytics</li>
           <li>✔ Standard visibility in search results</li>
           <li>✔ Email support</li>
         </ul>
+        <button class="btn" style="width:100%;margin-top:auto;">Get Started</button>
       </div>
 
       <!-- 2. Starter -->
       <div class="service-card bg-primary">
-        <h3>Starter Plan</h3>
+        <h3 class="plan-title">Starter Plan</h3>
         <p><strong>USD 100 / month</strong></p>
         <p>For Growing E-Commerce Teams</p>
-        <ul style="margin:1rem 0;list-style:none;padding:0">
+        <ul>
           <li>✔ Up to 1,000 SKUs</li>
           <li>✔ API integration or scheduled feeds</li>
-          <li>✔ Dashboard with traffic, clicks & estimated conversions</li>
-          <li>✔ Advanced filters (collections, sustainability, regions)</li>
-          <li>✔ Standard support (48–72 hours)</li>
+          <li>✔ Dashboard with traffic, clicks & conversions</li>
+          <li>✔ Advanced filters (collections, sustainability)</li>
+          <li>✔ Standard support (48–72 h)</li>
         </ul>
+        <button class="btn" style="width:100%;margin-top:auto;">Get Started</button>
       </div>
 
       <!-- 3. Growth -->
       <div class="service-card bg-primary">
-        <h3>Growth Plan</h3>
+        <h3 class="plan-title">Growth Plan</h3>
         <p><strong>USD 140 / month</strong></p>
         <p>For Large Retailers & Marketplaces</p>
-        <ul style="margin:1rem 0;list-style:none;padding:0">
+        <ul>
           <li>✔ Unlimited SKUs</li>
-          <li>✔ Sponsored placements (featured products)</li>
-          <li>✔ Advanced analytics with viral trend tracking</li>
+          <li>✔ Sponsored placements</li>
+          <li>✔ Advanced analytics + viral trend tracking</li>
           <li>✔ Regional segmentation & monthly reports</li>
           <li>✔ Dedicated Customer Success Manager</li>
-          <li>✔ Priority support (within 24 hours)</li>
+          <li>✔ Priority support (within 24 h)</li>
         </ul>
+        <button class="btn" style="width:100%;margin-top:auto;">Get Started</button>
       </div>
     </div>
   </div>
 </section>
-
+        
     <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container text-center">
